@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidad — NutriStreak</title>
+<style>
+  :root { --fg:#1a1a1a; --muted:#555; --bg:#fff; --accent:#3a7d00; --line:#e5e5e5; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+         line-height:1.65; }
+  main { max-width:760px; margin:0 auto; padding:48px 22px 80px; }
+  h1 { font-size:1.9rem; margin:0 0 4px; }
+  h2 { font-size:1.2rem; margin:38px 0 10px; padding-top:6px; }
+  .meta { color:var(--muted); font-size:.92rem; margin-bottom:8px; }
+  p, li { font-size:1rem; }
+  ul { padding-left:1.2em; }
+  a { color:var(--accent); }
+  table { width:100%; border-collapse:collapse; margin:14px 0; font-size:.95rem; }
+  th, td { text-align:left; padding:8px 10px; border:1px solid var(--line); vertical-align:top; }
+  th { background:#f6f6f6; }
+  .note { background:#f6f8f2; border-left:3px solid var(--accent); padding:12px 14px; margin:16px 0; border-radius:4px; }
+  footer { margin-top:48px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de Privacidad</h1>
+  <p class="meta">NutriStreak · Última actualización: 29 de mayo de 2026</p>
+
+  <p>Esta Política de Privacidad describe cómo NutriStreak (“la app”, “nosotros”)
+  recoge, usa y protege tu información cuando utilizas la aplicación móvil. Al
+  usar NutriStreak aceptas las prácticas descritas en este documento.</p>
+
+  <h2>1. Información que recogemos</h2>
+  <p>Recogemos únicamente los datos necesarios para que la app funcione:</p>
+  <table>
+    <tr><th>Dato</th><th>Para qué lo usamos</th></tr>
+    <tr><td>Email</td><td>Crear tu cuenta e iniciar sesión.</td></tr>
+    <tr><td>Nombre / nombre visible</td><td>Personalizar tu perfil.</td></tr>
+    <tr><td>Foto de perfil (avatar)</td><td>Mostrarla en tu perfil.</td></tr>
+    <tr><td>Datos físicos básicos (altura, peso, edad, sexo)</td><td>Calcular tus objetivos nutricionales y metabólicos.</td></tr>
+    <tr><td>Fotos de comida</td><td>Identificar alimentos y estimar sus valores nutricionales mediante inteligencia artificial.</td></tr>
+    <tr><td>Fotos de progreso corporal</td><td>Seguimiento de tu progreso. Se almacenan de forma privada.</td></tr>
+    <tr><td>Grabaciones de voz / transcripción</td><td>Registrar comidas dictándolas en voz alta.</td></tr>
+    <tr><td>Registros de nutrición y medidas corporales</td><td>Funcionalidad principal de la app (diario, rachas, progreso).</td></tr>
+    <tr><td>País / región (preferencia)</td><td>Priorizar alimentos locales en las búsquedas. No usamos geolocalización GPS.</td></tr>
+  </table>
+
+  <h2>2. Cómo usamos tu información</h2>
+  <ul>
+    <li>Para operar y ofrecer las funciones de la app.</li>
+    <li>Para calcular objetivos, rachas y estadísticas personalizadas.</li>
+    <li>Para sincronizar tus datos entre dispositivos.</li>
+    <li>Para enviarte recordatorios (si activas las notificaciones).</li>
+  </ul>
+  <p>No vendemos tus datos personales ni los usamos con fines publicitarios.</p>
+
+  <h2>3. Inteligencia artificial y proveedores externos</h2>
+  <div class="note">
+    Para identificar alimentos y estimar su información nutricional, las
+    <strong>fotos de comida, el texto y las grabaciones de voz</strong> se envían
+    a la API de <strong>Google Gemini</strong> para su procesamiento. Estos datos
+    se usan exclusivamente para devolverte el resultado dentro de la app.
+  </div>
+  <p>Utilizamos los siguientes proveedores de servicios (sub-encargados) que
+  procesan datos en nuestro nombre:</p>
+  <ul>
+    <li><strong>Supabase</strong> — autenticación, base de datos y almacenamiento de archivos.
+        (<a href="https://supabase.com/privacy">supabase.com/privacy</a>)</li>
+    <li><strong>Google Gemini API (Google LLC)</strong> — procesamiento por IA de imágenes, texto y voz.
+        (<a href="https://ai.google.dev/gemini-api/terms">ai.google.dev/gemini-api/terms</a>)</li>
+    <li><strong>Google Sign-In</strong> — inicio de sesión opcional con tu cuenta de Google.</li>
+    <li><strong>Expo / EAS (Expo)</strong> — entrega de actualizaciones y compilación de la app.</li>
+  </ul>
+
+  <h2>4. Permisos del dispositivo</h2>
+  <ul>
+    <li><strong>Cámara</strong> — fotografiar comidas y progreso corporal.</li>
+    <li><strong>Fotos / galería</strong> — elegir imágenes existentes para registrar comidas o tu avatar.</li>
+    <li><strong>Micrófono y reconocimiento de voz</strong> — registrar comidas por voz.</li>
+    <li><strong>Notificaciones</strong> — recordatorios de racha y de fotos de progreso.</li>
+  </ul>
+  <p>Puedes revocar estos permisos en cualquier momento desde los ajustes de tu dispositivo.</p>
+
+  <h2>5. Almacenamiento y seguridad</h2>
+  <p>Tus datos se almacenan en la infraestructura de Supabase. El acceso está
+  protegido por reglas de seguridad a nivel de fila (Row Level Security): cada
+  usuario solo puede acceder a sus propios datos. Las fotos de progreso se
+  guardan en un almacenamiento privado accesible solo mediante enlaces firmados.</p>
+
+  <h2>6. Conservación y eliminación de datos</h2>
+  <p>Conservamos tus datos mientras tu cuenta esté activa. Puedes
+  <strong>eliminar tu cuenta directamente desde la app</strong>
+  (Perfil → Eliminar cuenta). Al hacerlo:</p>
+  <ul>
+    <li>Tu cuenta se <strong>desactiva de inmediato</strong>.</li>
+    <li>Se elimina de forma <strong>permanente a los 30 días</strong>, junto con
+        todos tus datos y archivos asociados.</li>
+    <li>Durante esos 30 días puedes <strong>reactivarla</strong> simplemente
+        iniciando sesión de nuevo.</li>
+  </ul>
+
+  <h2>7. Tus derechos</h2>
+  <p>Tienes derecho a acceder, rectificar, eliminar y exportar tus datos
+  personales. Puedes ejercerlos desde la app o escribiéndonos al correo de
+  contacto indicado abajo.</p>
+
+  <h2>8. Menores de edad</h2>
+  <p>NutriStreak no está dirigida a menores de 13 años y no recogemos
+  conscientemente datos de menores de esa edad. Durante el registro se solicita
+  una edad mínima de 13 años.</p>
+
+  <h2>9. Transferencias internacionales</h2>
+  <p>Tus datos pueden procesarse en servidores ubicados fuera de tu país
+  (por ejemplo, en infraestructura de nuestros proveedores). Adoptamos medidas
+  razonables para protegerlos con independencia de dónde se procesen.</p>
+
+  <h2>10. Cambios en esta política</h2>
+  <p>Podemos actualizar esta Política de Privacidad ocasionalmente.
+  Publicaremos la versión vigente en esta misma página y actualizaremos la fecha
+  de “Última actualización”.</p>
+
+  <h2>11. Contacto</h2>
+  <p>Para cualquier consulta sobre privacidad o tus datos, escríbenos a:
+  <a href="mailto:emprendedor1377@gmail.com">emprendedor1377@gmail.com</a>.</p>
+
+  <footer>© 2026 NutriStreak. Todos los derechos reservados.</footer>
+</main>
+</body>
+</html>
